@@ -1,0 +1,5 @@
+/* Setting default style across all elements */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}

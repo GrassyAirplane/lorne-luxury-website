@@ -7,7 +7,8 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Crispy Kitchen - Bootstrap 5 HTML Template</title>
+        <title>Lorne Luxury</title>
+        <link rel="icon" href="images/additionals/favicon.svg" type="image/svg+xml">
 
         <!-- CSS FILES -->    
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,11 +16,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">                    
+        <!-- Important -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-
+        <!-- Icons  -->
         <link href="css/bootstrap-icons.css" rel="stylesheet">
-
         <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+        
         
 <!--
 
@@ -31,49 +33,31 @@ https://www.tooplate.com/view/2129-crispy-kitchen
     </head>
     
     <body>
-        
-        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+        <nav class="navbar navbar-expand-lg shadow-lg">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <a class="navbar-brand" href="index.html">
-                    Crispy Kitchen
+                    <img class="navigation-logo" src="../2129_crispy_kitchen/images/additionals/logo.webp" alt="lorne-luxuries logo">
                 </a>
-
-                <div class="d-lg-none">
-                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
-                </div>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link" href="#" aria-label="Go to the home page">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">Story</a>
+                            <a class="nav-link" href="" aria-label="Go to the about page">About</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Menu</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">Our Updates</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="" aria-label="Go to the contact page">Contact</a>
                         </li>
                     </ul>
                 </div>
-
-                <div class="d-none d-lg-block">
-                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
-                </div>
-
             </div>
         </nav>
 
@@ -86,11 +70,11 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                         <div class="col-lg-5 col-12 m-auto">
                             <div class="heroText">
 
-                                <h1 class="text-white mb-lg-5 mb-3">Delicious Steaks</h1>
+                                <h1 class="text-white mb-lg-5 mb-3">It doesnt get better than this.</h1>
 
                                 <div class="c-reviews my-3 d-flex flex-wrap align-items-center">
                                     <div class="d-flex flex-wrap align-items-center">
-                                        <h4 class="text-white mb-0 me-3">4.4/5</h4>
+                                        <h4 class="text-white mb-0 me-3">4.4/5 Rating</h4>
 
                                         <div class="reviews-stars">
                                             <i class="bi-star-fill reviews-icon"></i>
@@ -101,7 +85,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                                         </div>
                                     </div>
 
-                                    <p class="text-white w-100">From <strong>1,206+</strong> Customer Reviews</p>
+                                    <p class="text-white w-100">The <strong>Luxurious</strong> Getaway you were missing!</p>
                                 </div>
                             </div>
                         </div>
@@ -111,81 +95,20 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="carousel-image-wrap">
-                                            <img src="images/slide/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="img-fluid carousel-image" alt="">
+                                            <img src="images/hero-section/carousel-1.webp" class="img-fluid carousel-image" alt="Exterior of the house front">
                                         </div>
                                         
                                         <div class="carousel-caption">
                                             <span class="text-white">
                                                 <i class="bi-geo-alt me-2"></i>
-                                                Manhattan, New York
+                                                Melbourne, Australia
                                             </span>
 
-                                            <h4 class="hero-text">Fine Dining Restaurant</h4>
-                                        </div>
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <div class="carousel-image-wrap">
-                                            <img src="images/slide/jason-leung-O67LZfeyYBk-unsplash.jpg" class="img-fluid carousel-image" alt="">
-                                        </div>
-                                        
-                                        <div class="carousel-caption">
-                                            <div class="d-flex align-items-center">
-                                                <h4 class="hero-text">Steak</h4>
-
-                                                <span class="price-tag ms-4"><small>$</small>26.50</span>
-                                            </div>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <h5 class="reviews-text mb-0 me-3">3.8/5</h5>
-
-                                                <div class="reviews-stars">
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star reviews-icon"></i>
-                                                    <i class="bi-star reviews-icon"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <div class="carousel-image-wrap">
-                                            <img src="images/slide/ivan-torres-MQUqbmszGGM-unsplash.jpg" class="img-fluid carousel-image" alt="">
-                                        </div>
-                                        
-                                        <div class="carousel-caption">
-                                            <div class="d-flex align-items-center">
-                                                <h4 class="hero-text">Sausage Pasta</h4>
-
-                                                <span class="price-tag ms-4"><small>$</small>18.25</span>
-                                            </div>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <h5 class="reviews-text mb-0 me-3">4.2/5</h5>
-
-                                                <div class="reviews-stars">
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star reviews-icon"></i>
-                                                </div>
-                                            </div>
+                                            <h4 class="hero-text">Beautiful Exterior.</h4>
+                                            <p class="hero-p">A wonderful Stay for a great Holiday!</p>
                                         </div>
                                     </div>
                                 </div>
-
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
                             </div>
                         </div>
 
@@ -193,203 +116,106 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                 </div>
 
                 <div class="video-wrap">
-                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
-                        <source src="video/production_ID_3769033.mp4" type="video/mp4">
-                        	Your browser does not support the video tag.
-                    	</video>
+                    <img class ="background-house" src="images/hero-section/house.webp">
                 </div>
 
                 <div class="overlay"></div>
             </section>
 
-            <section class="menu section-padding">
+            <section class="gallery section-padding">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-12">
-                            <h2 class="text-center mb-lg-5 mb-4">Special Menus</h2>
+                            <h2 class="text-center mb-lg-5 mb-4">Special Locations</h2>
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg" class="img-fluid menu-image" alt="">
+                            <div class="gallery-thumb">
+                                <div class="gallery-image-wrap">
+                                    <img src="images/gallery-section/gallery-first.webp" class="img-fluid gallery-image" alt="A White bedroom image">
 
-                                    <span class="menu-tag bg-warning">Breakfast</span>
+                                    <span class="gallery-tag">Indoors</span>
                                 </div>
 
-                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Morning Fresh</h4>
-
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>12.50</span>
-
-                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 class="reviews-text mb-0 me-3">4.3/5</h6>
-
-                                        <div class="reviews-stars">
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p class="reviews-text mb-0 ms-4">102 Reviews</p>
-                                    </div>
+                                <div class="gallery-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Bedroom One</h4>
+                                    <p class="gallery-text">The Best Bedroom you will ever lay upon. Perfect for a good nights rest!</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="images/lunch/farhad-ibrahimzade-MGKqxm6u2bc-unsplash.jpg" class="img-fluid menu-image" alt="">
+                            <div class="gallery-thumb">
+                                <div class="gallery-image-wrap">
+                                    <img src="images/gallery-section/gallery-second.webp" class="img-fluid gallery-image" alt="A living room image ">
 
-                                    <span class="menu-tag bg-warning">Lunch</span>
+                                    <span class="gallery-tag">Indoors</span>
                                 </div>
 
-                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Tooplate Soup</h4>
-
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>24.50</span>
-
-                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 class="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div class="reviews-stars">
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p class="reviews-text mb-0 ms-4">50 Reviews</p>
-                                    </div>
+                                <div class="gallery-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Living Room</h4>
+                                    <p class="gallery-text">A wonderful place for resting and enjoying the scenery, fully furnised with at TV</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="images/dinner/keriliwi-c3mFafsFz2w-unsplash.jpg" class="img-fluid menu-image" alt="">
+                            <div class="gallery-thumb">
+                                <div class="gallery-image-wrap">
+                                    <img src="images/gallery-section/gallery-third.webp" class="img-fluid gallery-image" alt="second bedroom image">
 
-                                    <span class="menu-tag bg-warning">Dinner</span>
+                                    <span class="gallery-tag">Indoors</span>
                                 </div>
 
-                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Premium Steak</h4>
-
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>45</span>
-
-                                    <del class="ms-4"><small>$</small>150</del>
-
-                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 class="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div class="reviews-stars">
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p class="reviews-text mb-0 ms-4">86 Reviews</p>
-                                    </div>
+                                <div class="gallery-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Second Bedroom</h4>
+                                    <p class="gallery-text">The second best bedroom you will ever lay upon. Perfect for a second nights rest or a guest!</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="images/dinner/farhad-ibrahimzade-ZipYER3NLhY-unsplash.jpg" class="img-fluid menu-image" alt="">
+                            <div class="gallery-thumb">
+                                <div class="gallery-image-wrap">
+                                    <img src="images/gallery-section/gallery-fourth.webp" class="img-fluid gallery-image" alt="garden outdoors image">
 
-                                    <span class="menu-tag bg-warning">Dinner</span>
+                                    <span class="gallery-tag">Outdoors</span>
                                 </div>
 
-                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Seafood Set</h4>
-
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>86</span>
-
-                                    <del class="ms-4"><small>$</small>124</del>
-
-                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 class="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div class="reviews-stars">
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p class="reviews-text mb-0 ms-4">44 Reviews</p>
-                                    </div>
+                                <div class="gallery-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Outdoor Garden</h4>
+                                    <p class="gallery-text">A wonderful Garden right outside the household. Perfect for a cup of tea and resting!</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="images/breakfast/louis-hansel-dphM2U1xq0U-unsplash.jpg" class="img-fluid menu-image" alt="">
+                            <div class="gallery-thumb">
+                                <div class="gallery-image-wrap">
+                                    <img src="images/gallery-section/gallery-fifth.webp" class="img-fluid gallery-image" alt="Kitchen and island image">
 
-                                    <span class="menu-tag bg-warning">Breakfast</span>
+                                    <span class="gallery-tag">Indoors</span>
                                 </div>
 
-                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Burger Set</h4>
-
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>20.50</span>
-
-                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 class="reviews-text mb-0 me-3">4.3/5</h6>
-
-                                        <div class="reviews-stars">
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p class="reviews-text mb-0 ms-4">102 Reviews</p>
-                                    </div>
+                                <div class="gallery-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Kitchen & Island</h4>
+                                    <p class="gallery-text">World class Kitchen counter and island. Perfcet for creating meals for the day.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="images/lunch/farhad-ibrahimzade-D5c9ZciQy_I-unsplash.jpg" class="img-fluid menu-image" alt="">
+                            <div class="gallery-thumb">
+                                <div class="gallery-image-wrap">
+                                    <img src="images/gallery-section/gallery-sixth.webp" class="img-fluid gallery-image" alt="A dining room image">
 
-                                    <span class="menu-tag bg-warning">Lunch</span>
+                                    <span class="gallery-tag">Indoors</span>
                                 </div>
 
-                                <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Healthy Soup</h4>
-
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>34.20</span>
-
-                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 class="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div class="reviews-stars">
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star-fill reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                            <i class="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p class="reviews-text mb-0 ms-4">64 Reviews</p>
-                                    </div>
+                                <div class="gallery-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Dining Room</h4>
+                                    <p class="gallery-text">Enjoy a meal at the dining table with a breath taking view of the mountains!</p>
                                 </div>
                             </div>
                         </div>
@@ -398,102 +224,19 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                 </div>
             </section>
 
-            <section class="BgImage"></section>
-
-            <section class="news section-padding">
+            <section class="testimonial section-padding-bottom">
                 <div class="container">
                     <div class="row">
-
-                        <h2 class="text-center mb-lg-5 mb-4">News &amp; Events</h2>
-
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="news-thumb mb-4">
-                                <a href="news-detail.html">
-                                    <img src="images/news/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg" class="img-fluid news-image" alt="">
-                                </a>
-                                
-                                <div class="news-text-info news-text-info-large">
-                                    <span class="category-tag bg-danger">Featured</span>
-
-                                    <h5 class="news-title mt-2">
-                                        <a href="news-detail.html" class="news-title-link">Healthy Lifestyle and happy living tips</a>
-                                    </h5>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="news-thumb mb-4">
-                                <a href="news-detail.html">
-                                    <img src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg" class="img-fluid news-image" alt="">
-                                </a>
-                                
-                                <div class="news-text-info news-text-info-large">
-                                    <span class="category-tag bg-danger">Featured</span>
-
-                                    <h5 class="news-title mt-2">
-                                        <a href="news-detail.html" class="news-title-link">How to make a healthy meal</a>
-                                    </h5>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="news-thumb mb-lg-0 mb-lg-4 mb-0">
-                                <a href="news-detail.html">
-                                    <img src="images/news/gilles-lambert-S_LhjpfIdm4-unsplash.jpg" class="img-fluid news-image" alt="">
-                                </a>
-                                
-                                <div class="news-text-info">
-                                    <span class="category-tag me-3 bg-info">Promotions</span>
-
-                                    <strong>8 April 2022</strong>
-
-                                    <h5 class="news-title mt-2">
-                                        <a href="news-detail.html" class="news-title-link">Is Coconut good for you?</a>
-                                    </h5>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="news-thumb mb-lg-0 mb-lg-4 mb-2">
-                                <a href="news-detail.html">
-                                    <img src="images/news/caroline-attwood-bpPTlXWTOvg-unsplash.jpg" class="img-fluid news-image" alt="">
-                                </a>
-                                
-                                <div class="news-text-info">
-                                    <span class="category-tag">News</span>
-
-                                    <h5 class="news-title mt-2">
-                                        <a href="news-detail.html" class="news-title-link">Salmon Steak Noodle</a>
-                                    </h5>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="news-thumb mb-4">
-                                <a href="news-detail.html">
-                                    <img src="images/news/louis-hansel-GiIiRV0FjwU-unsplash.jpg" class="img-fluid news-image" alt="">
-                                </a>
-                                
-                                <div class="news-text-info">
-                                    <span class="category-tag me-3 bg-info">Meeting</span>
-
-                                    <strong>30 April 2022</strong>
-
-                                    <h5 class="news-title mt-2">
-                                        <a href="news-detail.html" class="news-title-link">Making a healthy salad</a>
-                                    </h5>
-                                </div>
-                            </div> 
-                        </div>
-
-                    </div>
-                </div>
+                        <h2 class="text-center mb-lg-5 mb-4">Past Testimonial</h2>
             </section>
-
+            
+            <section class="BgImage">
+                <div class="bg-image-card">
+                    <h2>Luxury Holiday Rental</h2>
+                    <p>Experience the elegance and grandeur of lorne-luxury. This luxurious rental offers top-notch amenities, breathtaking views, and impeccable service. Book your unforgettable experience today!</p>
+                    <button class="bg-image-card-btn">Book Now</button>
+                  </div>
+            </section>
         </main>
 
         <footer class="site-footer section-padding">
@@ -503,7 +246,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                 <div class="row">
 
                     <div class="col-12">
-                        <h4 class="text-white mb-4 me-5">Crispy Kitchen</h4>
+                        <h4 class="text-white mb-4 me-5">Lorne Luxury</h4>
                     </div>
 
                     <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">

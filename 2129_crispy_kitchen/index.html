@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Lorne Luxury Redesign website for booking a luxury home over a holiday.">
+        <meta name="author" content="Euan Lim">
 
         <title>Lorne Luxury</title>
         <link rel="icon" href="images/additionals/favicon.svg" type="image/svg+xml">
@@ -21,8 +21,11 @@
         <!-- Icons  -->
         <link href="css/bootstrap-icons.css" rel="stylesheet">
         <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
-        
-        
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <!-- Sweet Alert -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+
 <!--
 
 Tooplate 2129 Crispy Kitchen
@@ -224,17 +227,77 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                 </div>
             </section>
 
-            <section class="testimonial section-padding-bottom">
+            <section class="testimonial section-padding">
                 <div class="container">
                     <div class="row">
-                        <h2 class="text-center mb-lg-5 mb-4">Past Testimonial</h2>
+                        <h2 class="text-center mb-lg-5 mb-4 text-white">Past Testimonial</h2>
+                        <!-- Slider main container -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide_1">
+                                    <div class="testimonial-card">
+                                        <img class="testimonial-img" src="./images/testimonial/testimonial-first.webp" alt="White women in her mid to early thirties"/>
+                                        <span class="testimonial-text">
+                                            <h3 class="testimonial-header">Kate Winslet</h3>
+                                            <h4 class="mb-0 me-3">4.4/5 Rating</h4>
+                                            <div class="reviews-stars">
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star reviews-icon"></i>
+                                            </div>
+                                            <p>Lorne Luxury was an absolutely charming place that I hope to visit again some time, it was incredibly affordable and enjoyable to live in.</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide_2">
+                                    <div class="testimonial-card">
+                                        <img class="testimonial-img" src="./images/testimonial/testimonial-second.webp" alt="Asian Man in his mid twenties"/>
+                                        <span class="testimonial-text">
+                                            <h3 class="testimonial-header">Jake Ambross</h3>
+                                            <h4 class="mb-0 me-3">5.0/5 Rating</h4>
+                                            <div class="reviews-stars">
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                            </div>
+                                            <p>Lorne Luxury is my absolute favourte vacation and holiday stay home. It features beautiful sights, and modern standards of living!</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide_3">
+                                    <div class="testimonial-card">
+                                        <img class="testimonial-img" src="./images/testimonial/testimonial-third.webp" alt="Indian Old man in his late fifties"/>
+                                        <span class="testimonial-text">
+                                            <h3 class="testimonial-header">Sir Raj Guptal</h3>
+                                            <h4 class="mb-0 me-3">3.2/5 Rating</h4>
+                                            <div class="reviews-stars">
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star-fill reviews-icon"></i>
+                                                <i class="bi-star reviews-icon"></i>
+                                                <i class="bi-star reviews-icon"></i>
+                                            </div>
+                                            <p>Lorne Luxury has been wonderful to live in, however perhaps the outdoor life is not for me. Otherwise it is a lovely relaxing place.</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>    
+                </div>
             </section>
             
             <section class="BgImage">
                 <div class="bg-image-card">
                     <h2>Luxury Holiday Rental</h2>
                     <p>Experience the elegance and grandeur of lorne-luxury. This luxurious rental offers top-notch amenities, breathtaking views, and impeccable service. Book your unforgettable experience today!</p>
-                    <button class="bg-image-card-btn">Book Now</button>
+                    <button class="bg-image-card-btn" id="book-now">Book Now</button>
                   </div>
             </section>
         </main>
@@ -252,19 +315,16 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                     <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
                         <h6 class="text-white mb-lg-4 mb-3">Location</h6>
 
-                        <p>121 Einstein Loop N, Bronx, NY 10475, United States</p>
+                        <p>1/17 Minapre Street, Lorne.</p>
 
-                        <a href="https://goo.gl/maps/wZVGLA7q64uC1s886" class="custom-btn btn btn-dark mt-2">Directions</a>
+                        <a href="https://goo.gl/maps/wZVGLA7q64uC1s886" class="custom-btn btn btn-dark mt-2">Link to Map</a>
                     </div>
 
                     <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
-                        <h6 class="text-white mb-lg-4 mb-3">Opening Hours</h6>
+                        <h6 class="text-white mb-lg-4 mb-3">Contact</h6>
 
-                        <p class="mb-2">Monday - Friday</p>
-
-                        <p>10:00 AM - 08:00 PM</p>
-
-                        <p>Tel: <a href="tel: 010-02-0340" class="tel-link">010-02-0340</a></p>
+                        <p>Tel: <a href="tel: 010-02-0340" class="tel-link">03-5237-0296</a></p>
+                        <p>Email: <a>bryan@bryanjames.com.au</a></p>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
@@ -281,8 +341,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                             <li><a href="#" class="social-icon-link bi-youtube"></a></li>
                         </ul>
                     
-                        <p class="copyright-text tooplate-mt60">Copyright © 2022 Crispy Kitchen Co., Ltd.
-                        <br>Design: <a rel="nofollow" href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>
+                        <p class="copyright-text">Copyright © 2015 Lorne Luxury
                         
                     </div>
 
@@ -369,9 +428,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
         </div>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/custom.js"></script>
-
     </body>
 </html>

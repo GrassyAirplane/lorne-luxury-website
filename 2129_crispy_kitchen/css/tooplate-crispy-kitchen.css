@@ -524,6 +524,10 @@ strong {
 /*---------------------------------------
   testimonial               
 -----------------------------------------*/
+.testimonial {
+  background-color:#18354f;
+}
+
 .testimonial-thumb {
   position: relative;
   overflow: hidden;
@@ -581,6 +585,44 @@ strong {
 .testimonial-image:hover {
   transform: scale(1.2);
 }
+
+
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-card {
+  margin: 1rem;
+  width: 45rem;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 3rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem black;
+  padding: 2rem;
+  background-color: whitesmoke;
+}
+
+.testimonial-img {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 10rem;
+  margin-right: 1rem;
+}
+
+.testimonial-header {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.testimonial-text {
+  width: 40rem;
+}
+
+
 
 .category-tag,
 .gallery-tag {
@@ -749,7 +791,8 @@ strong {
   FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-image: url('../images/daan-evers-tKN1WXrzQ3s-unsplash.jpg');
+  background-color: #18354f;
+  /* background-image: url('../images/daan-evers-tKN1WXrzQ3s-unsplash.jpg'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -780,6 +823,7 @@ strong {
 }
 
 .copyright-text {
+  margin-top: .5rem;
   font-size: var(--gallery-font-size);
 }
 
